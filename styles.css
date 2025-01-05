@@ -1,0 +1,419 @@
+/*--------------Allgemeine Sachen---------------------*/
+
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding-bottom: 75px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+
+}
+
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*--------------Hilfsklassen---------------------*/
+
+.standard-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.highlight{
+    color: coral;
+}
+
+.btn{
+    display: block;
+    font-size: 20px;
+    background-color: darkgreen;
+    color: coral;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.7s ease, color 0.7s ease;
+    margin: 15px 0px;
+}
+
+.btn:hover{
+    background-color: coral;
+    color: darkgreen;
+}
+
+
+
+/*--------------Header startseite---------------------*/
+
+#main-header h1{
+    background-image: url(/image/diamond.jpg);
+    background-size: cover;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#main-header .main-nav{
+    background-color: aqua;
+}
+
+#main-header .main-nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#main-header .main-nav ul li{
+    padding: 30px;
+    font-size: 20px;
+}
+#main-header .main-nav ul li a {
+    transition: color 0.7s ease, background-color 0.7s ease;
+    border-radius: 5px;
+}
+
+#main-header .main-nav ul li a:hover{
+    color: coral;
+    background-color: black;
+}
+
+
+
+/*--------------Main startseite---------------------*/
+
+#main-section .standard-container{
+    background-color: white;
+    padding: 50px;
+    
+}
+
+#main-section .standard-container p{
+    font-size: 20px;
+    padding-bottom: 30px;
+    
+    
+}
+
+
+/*--------------Footer for all---------------------*/
+
+#main-footer .standard-container{
+    background-color: aqua;
+    text-align: center;
+    padding: 50px;
+}
+
+#main-footer .standard-container p{
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+#main-footer .standard-container img{
+    width: 80%;
+    border: 2px black solid;
+    border-radius: 50%;
+}
+
+
+/*--------------diamant header---------------------*/
+
+#diamond-header::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#diamond-header h1{
+    float: left;
+    color: coral;
+}
+
+
+
+#diamond-header .standard-container ul {
+    float: right;
+    list-style: none;
+}
+
+#diamond-header .standard-container ul li {
+    float: left;
+}
+
+#diamond-header .standard-container ul li a{
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#diamond-header .standard-container ul li a:hover{
+    color: coral;
+    background-color: black;
+}
+
+#diamond-header .standard-container ul li a{
+    transition: color 0.7s ease, background-color 0.7s ease;
+}
+
+#diamond-header .standard-container ul li a{
+    border-radius: 5px;
+}
+
+
+/*--------------diamant main---------------------*/
+#diamond-section .standard-container{
+    background-color: white;
+    
+}
+
+
+
+
+#diamond-section::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+#diamond-section .diamond-text{
+    float: right;
+    width: 50%;
+    color: darkorchid;
+    padding: 20px;
+}
+
+#diamond-section .diamond-image{
+    float: left;
+    width: 50%;
+    
+}
+
+#diamond-section .diamond-image img{
+    width: 90%;
+    border: 2px black solid;
+    border-radius: 6px;
+}
+
+#diamond-section .diamond-text p{
+    font-size: 20px;
+    padding-bottom: 30px;
+
+}
+
+/*-------------Fund des Diamanten----------------------*/
+
+/*--------------diamant fund header---------------------*/
+
+#discovery-header .standard-container ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 30px;
+}
+
+#discovery-header .standard-container ul li a:hover{
+    color: coral;
+    background-color: black;
+}
+
+#discovery-header .standard-container ul li a{
+    transition: color 0.7s ease, background-color 0.7s ease;
+    border-radius: 5px;
+}
+/*--------------diamant fund h1 und main---------------------*/
+
+
+.discovery-headline .standard-container{
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: coral;
+    text-decoration: underline;
+}
+
+.discovery-section::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.discovery-section .standard-container .discovery-text{
+    float: left;
+    width: 70%;
+    color: darkslateblue;
+    font-size: 30px;
+}
+
+.discovery-section .standard-container .discovery-image{
+    float: right;
+    width: 30%;
+    
+}
+
+.discovery-section .standard-container .discovery-image img{
+    width: 100%;
+    border: 2px black solid;
+    border-radius: 6px;
+}
+
+/*--------------diamant ausstellung header---------------------*/
+
+#exhibition-header .standard-container ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 30px;
+}
+
+#exhibition-header .standard-container ul li a:hover{
+    color: coral;
+    background-color: black;
+    border-radius: 5px;
+    transition: color 0.7s ease, background-color 0.7s ease;
+}
+
+/*--------------diamant ausstellung h1 und main---------------------*/
+
+
+.exhibition-titel .standard-container {
+    background: url(/image/VolkovBanner_h400px.jpg);
+}
+
+.exhibition-titel .standard-container h1{
+    color: darkred;
+    text-align: center;
+    padding: 50px;
+}
+
+.exhibition-section .standard-container h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: darkred;
+}
+
+.exhibition-section .standard-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.exhibition-section .standard-container table th,
+.exhibition-section .standard-container table td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.exhibition-section .standard-container table th {
+    background-color: darkred;
+    color: rgb(126, 173, 17);
+}
+
+.exhibition-section .standard-container table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.exhibition-section .standard-container table tr:hover {
+    background-color: #ddd;
+}
+
+/*--------------Juwelier volkov header---------------------*/
+
+
+#volkov-header .standard-container ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 25px;
+}
+
+#volkov-header .standard-container ul li a:hover{
+    color: coral;
+    background-color: black;
+    border-radius: 5px;
+    transition: color 0.7s ease, background-color 0.7s ease;
+}
+
+
+.volkov-banner .standard-container{
+    background: url(/image/VolkovBanner_h400px.jpg);
+    padding: 50px;
+    text-align: center;
+    color: darkred;
+}
+
+/*--------------Juwelier volkov  main---------------------*/
+
+#content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+#content .standard-container .volkov-text{
+    float: left;
+    width: 60%;
+}
+
+#content .standard-container .volkov-map{
+    float: right;
+    width: 40%;
+    
+}
+
+#content .standard-container .volkov-map iframe{
+    width: 100%;
+    height: 400px;
+    border: 2px black solid;
+    border-radius: 6px;
+}
+
+#content .standard-container .volkov-text h2{
+    color: darkred;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+#content .standard-container .volkov-text p{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
